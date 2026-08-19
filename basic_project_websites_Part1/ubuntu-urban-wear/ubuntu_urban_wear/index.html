@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubuntu Urban Wear</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="#home" class="brand">
+      <img src="images/logo.png" alt="Ubuntu Urban Wear logo">
+      <span>Ubuntu Urban Wear</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">South African Streetwear</p>
+        <h1>Wear Your Story.</h1>
+        <p>Affordable contemporary fashion for students, young professionals and everyday trendsetters.</p>
+        <a class="btn" href="#products">Shop Featured Products</a>
+      </div>
+      <div class="hero-logo">
+        <img src="images/logo.png" alt="Ubuntu Urban Wear black, white and gold logo">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2>About Ubuntu Urban Wear</h2>
+      <p>Ubuntu Urban Wear is a proposed South African retail organisation specialising in affordable contemporary and streetwear clothing. The brand aims to provide young consumers with stylish products and a convenient digital shopping experience.</p>
+
+      <div class="grid two">
+        <article class="card">
+          <h3>Mission</h3>
+          <p>To provide affordable, stylish and accessible fashion while delivering a convenient shopping experience.</p>
+        </article>
+        <article class="card">
+          <h3>Vision</h3>
+          <p>To become a recognised South African online fashion brand known for quality, affordability and customer service.</p>
+        </article>
+      </div>
+
+      <div class="target-box">
+        <h3>Target Audience</h3>
+        <p>South African students, young professionals and digitally active consumers aged approximately 18–35 who value affordability, convenience and modern style.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="products">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div class="grid three">
+        <article class="product-card">
+          <div class="product-placeholder">T-Shirt</div>
+          <h3>Ubuntu Graphic Tee</h3>
+          <p>Comfortable everyday streetwear.</p>
+          <strong>R299</strong>
+          <button class="btn small" onclick="addToCart('Ubuntu Graphic Tee')">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-placeholder">Hoodie</div>
+          <h3>Urban Hoodie</h3>
+          <p>Warm, simple and versatile.</p>
+          <strong>R599</strong>
+          <button class="btn small" onclick="addToCart('Urban Hoodie')">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-placeholder">Cap</div>
+          <h3>Signature Cap</h3>
+          <p>A clean finish for your everyday look.</p>
+          <strong>R199</strong>
+          <button class="btn small" onclick="addToCart('Signature Cap')">Add to Cart</button>
+        </article>
+      </div>
+      <p id="cart-message" class="status"></p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Use the form below to submit a product or general enquiry.</p>
+      <form class="contact-form" onsubmit="submitContact(event)">
+        <label for="name">Full Name</label>
+        <input id="name" type="text" required>
+
+        <label for="email">Email Address</label>
+        <input id="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button class="btn" type="submit">Send Enquiry</button>
+      </form>
+      <p id="contact-message" class="status"></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-wrap">
+    <div>
+      <img class="footer-logo" src="images/logo.png" alt="Ubuntu Urban Wear logo">
+      <p>Style. Culture. Unity.</p>
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><span>f</span> Facebook</a>
+      <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><span>𝕏</span> X</a>
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><span>▶</span> YouTube</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><span>◎</span> Instagram</a>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>&copy; 2026 Ubuntu Urban Wear. Student project website.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
